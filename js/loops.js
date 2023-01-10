@@ -38,7 +38,8 @@
 
 // console.log(a);
 // console.log(b);
-// const number = 3;
+
+// const number = 18;
 // let value = 0;
 // for (let i = 1; i <= number; i++) {
 //   console.log(i);

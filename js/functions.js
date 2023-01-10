@@ -21,3 +21,14 @@
 // }
 
 // console.log(makeMessage('Nick', 700));
+
+// let value = 0;
+function calculateTotal(number) {
+  for (let i = 1; i <= number; i += 1) {
+    //  value += i;
+    //   return value;
+    return (number += i);
+  }
+}
+console.log(calculateTotal(1));
+console.log(calculateTotal(3));
