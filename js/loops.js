@@ -69,3 +69,11 @@
 // } while (password.length < 5);
 
 // console.log('Ввели пароль: ', password);
+
+// const clients = [12, 85, 37, 4];
+// let total = 0;
+// for (let i = 0; i < clients.length; i += 1) {
+//   console.log(clients[i]);
+//   total += clients[i];
+// }
+// console.log(total);

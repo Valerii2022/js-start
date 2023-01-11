@@ -22,13 +22,55 @@
 
 // console.log(makeMessage('Nick', 700));
 
-// let value = 0;
-function calculateTotal(number) {
-  for (let i = 1; i <= number; i += 1) {
-    //  value += i;
-    //   return value;
-    return (number += i);
+// function calculateTotalPrice(order) {
+//   let total = 0;
+//   for (let i = 0; i < order.length; i += 1) {
+//     console.log(order[i]);
+//     total += order[i];
+//   }
+//   return total;
+// }
+
+// console.log(calculateTotalPrice([164, 48, 168]));
+
+// function longestWord(string) {
+//   const str = string.split(' ');
+//   console.log(str);
+//   let longest = 0;
+//   let word = 0;
+//   for (var i = 0; i <= str.length - 1; i++) {
+//     if (longest < str[i].length) {
+//       longest = str[i].length;
+//       word = str[i];
+//     }
+//   }
+//   return word;
+// }
+
+// let string = 'The world is miness';
+// string = string.split(' ');
+// console.log(string);
+// let longest = 0;
+// let word = 0;
+// for (let i = 0; i <= string.length - 1; i += 1) {
+//   console.log(string[i]);
+//   console.log(string[i].length);
+//   if (longest < string[i].length) {
+//     longest = string[i].length;
+//     word = string[i];
+//   }
+// }
+// console.log(word);
+
+function filterArray(numbers, value) {
+  for (let i = 0; i <= numbers.length - 1; i++) {
+    console.log(numbers[i]);
+    //  if (numbers[i] <= value) {
+    //    numbers.splice(numbers[i]);
+    //  } else {
+    //    numbers.push(numbers[i]);
+    //  }
   }
+  return numbers;
 }
-console.log(calculateTotal(1));
-console.log(calculateTotal(3));
+console.log(filterArray([6, 7, 8, 10], 7));
