@@ -17,3 +17,16 @@
 //   return array;
 // }
 // console.log(totalPayment(319.31));
+
+let userName;
+let age;
+let userAge;
+let ageEnd;
+console.log((userName = prompt('add you name')));
+console.log((userAge = prompt('year of birth')));
+age = 2023 - userAge;
+if (age === 1) {
+  console.log(`${userName}: one year old.`);
+} else {
+  console.log(`${userName}: ${age} years old.`);
+}
