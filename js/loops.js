@@ -20,7 +20,7 @@
 // const number = 6;
 // let value = 0;
 
-// for (let i = 0; i <= number; i += 2) {
+// for (let i = 0; i <= number; i += 1) {
 //   console.log(i);
 //   value += i;
 // }
@@ -48,10 +48,11 @@
 // console.log(`total ${value}`);
 
 // let counter = 0;
+// let sum = 0;
 
 // while (counter <= 10) {
 //   console.log('counter: ', counter);
-//   counter += 1;
+//   counter += 2;
 // }
 
 // let clientCounter = 8;

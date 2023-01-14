@@ -10,7 +10,7 @@
 // let enterPow = prompt('Enter pow');
 // enterPow = Number(enterPow);
 // console.log(enterPow);
-// const powNumber = (Math.pow(enterNumber, enterPow));
+// const powNumber = Math.pow(enterNumber, enterPow);
 // console.log(`Result ${powNumber}`);
 // const result = enterNumber ** enterPow;
 // console.log(`Result ${result}`);
@@ -28,7 +28,7 @@
 
 // const x1 = 10;
 // const x2 = 30;
-// const number = 10;
+// const number = 50;
 
 // if (number < x1) {
 //   console.log(`Value ${number} lower than ${x1}`);
