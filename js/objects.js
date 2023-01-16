@@ -50,7 +50,6 @@
 // };
 // console.log(credentials);
 
-
 // const apartment = {
 //   descr: "Spacious apartment in the city center",
 //   rating: 4,
@@ -67,7 +66,6 @@
 // console.log(keys);
 // console.log(values);
 
-
 // const book = {
 //   author: "Bernard Cornwell",
 //   genres: ["historical prose", "adventure"],
@@ -82,10 +80,9 @@
 
 // function countProps(object) {
 //     let propCount = 0;
-    
+
 //     const keys = Object.keys(object);
 //     propCount = keys.length;
-
 
 // //   for (const key in object) {
 // //       if (object.hasOwnProperty(key)) {
@@ -100,14 +97,13 @@
 
 // function countTotalSalary(salaries) {
 //     let totalSalary = 0;
-    
+
 //     const value = Object.values(salaries);
 //     for (const key of value) {
 //         totalSalary += key;
 //     }
 //   return totalSalary;
 // }
-
 
 // const colors = [
 //   { hex: "#f44336", rgb: "244,67,54" },
@@ -127,13 +123,12 @@
 // console.log(hexColors);
 // console.log(rgbColors);
 
-
 // const products = [
 //   { name: "Radar", price: 1300, quantity: 4 },
 //     { name: "Scanner", price: 2700, quantity: 3 },
 //   { name: "Grip", price: 1200, quantity: 9 },
 //   { name: "Droid", price: 400, quantity: 7 },
-  
+
 // ];
 
 // function getProductPrice(productName) {
@@ -145,10 +140,10 @@
 //         } else {
 //             price = null;
 //         }
-        
+
 //     }
 // return price;
-    
+
 // }
 // console.log(getProductPrice("Engine"));
 // console.log(getProductPrice("Radar"));
@@ -156,29 +151,26 @@
 // console.log(getProductPrice("Droid"));
 // console.log(getProductPrice("Grip"));
 
-
 /*Напиши функцію getAllPropValues(propName), яка приймає один параметр propName - ім'я (ключ) властивості. Функція повинна повернути масив всіх значень властивості з таким ім'ям з кожного об'єкта в масиві products. Якщо в об'єктах відсутні властивості з таким ім'ям, функція повинна повернути порожній масив.*/
 
 const products = [
-  { name: "Radar", price: 1300, quantity: 4 },
-  { name: "Scanner", price: 2700, quantity: 3 },
-  { name: "Droid", price: 400, quantity: 7 },
-  { name: "Grip", price: 1200, quantity: 9 },
+  { name: 'Radar', price: 1300, quantity: 4 },
+  { name: 'Scanner', price: 2700, quantity: 3 },
+  { name: 'Droid', price: 400, quantity: 7 },
+  { name: 'Grip', price: 1200, quantity: 9 },
 ];
 
 function getAllPropValues(propName) {
   // Change code below this line
-    let result = [];
-    for (const product of products) {
-        console.log(product);
-    }
-
-
+  let result = [];
+  for (const product of products) {
+    console.log(product);
+  }
 
   // Change code above this line
 }
 
-console.log(getAllPropValues("name"));
-console.log(getAllPropValues("quantity"));
-console.log(getAllPropValues("price"));
-console.log(getAllPropValues("category"));
+console.log(getAllPropValues('name'));
+console.log(getAllPropValues('quantity'));
+console.log(getAllPropValues('price'));
+console.log(getAllPropValues('category'));

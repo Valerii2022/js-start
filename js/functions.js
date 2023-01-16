@@ -153,3 +153,15 @@
 //   return result;
 // }
 // console.log(includes([7, 5, 76, 9], 77));
+
+// function totalSalary(numbers) {
+//   let total = 0;
+//   for (let value of numbers) {
+//     if (value % 2 === 0) {
+//       total += value;
+//     }
+//   }
+//   return total;
+// }
+
+// console.log(totalSalary([14, 25, 7, 89, 69, 36, 12]));
