@@ -445,3 +445,51 @@
 
 // console.log(`Total - ${total}`);
 // console.log
+
+
+/*                    #19 
+  Напишіть скрипт для світлофора, де користувач може ввести назву кольору
+  у prompt і в залежності від того який був введений колір відображатимуться
+  різні повідомлення через alert. Використовуй конструкцію switch case
+  
+  red - 'STOP!!!!'
+  green - 'GO!'
+  yellow - 'Wait a little!'
+*/
+
+// let message = prompt('Add color').toLowerCase();
+// console.log(message);
+
+// switch (message) {
+//   case 'red':
+//     alert('STOP!!!!');
+//     break;
+  
+//   case 'green':
+//     alert('GO!')
+//     break;
+  
+//   case 'yellow':
+//     alert('Wait a little!');
+//     break;
+
+//   default:
+//     alert('Wrong color!!!');
+//     break;
+// }
+
+/*                      #20
+  Напиши скрипт який буде просити нас ввести число більше за 100, доки
+  ми таке не введемо
+    
+  Скористайся циклом while
+*/
+
+
+// let number = Number(prompt("Write your number bigger than 100"));
+
+// while (number < 100) {
+//   number = Number(prompt("Write your number bigger than 100"));
+// }
+// console.log(number);
+

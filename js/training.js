@@ -1,0 +1,3 @@
+let friends
+
+for (const )
