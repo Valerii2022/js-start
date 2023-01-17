@@ -45,10 +45,10 @@
 // value = Number(value);
 // console.log(value);
 // console.log(typeof value);
-// const value = "15.55jhgfd";
+// value = "15.55jhgfd";
 // console.log(Number.parseInt(value));
 // console.log(Number.parseFloat(value));
-// const value = "56";
+// value = "56";
 // console.log(value);
 // console.log(typeof value);
 // console.log(Number(value));
