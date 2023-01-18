@@ -107,3 +107,48 @@
 // }
 
 // console.log(smallestNumb);
+
+/*
+ * Напиши скрипт, который объединяет все элементы массива в одно строковое значение.
+ * Элементов может быть произвольное кол-во.
+ * Пусть элементы массива  в строке будут разделены запятой.
+ * - Сначала через for
+ * - Потом через join()
+ */
+// const friends = ['Mango', 'Poly', 'Kiwi', 'Ajax'];
+
+// let string = '';
+// for (const friend of friends) {
+//   string += friend + ',';
+// }
+// string = string.slice(0, string.length - 1);
+
+// const string = friends.join(',');
+
+// console.log(string);
+
+/*
+ * Напиши скрипт который заменяет регистр каждого символа в строке на противоположный.
+ * Например, если строка «JavaScript», то на выходе должена быть строка «jAVAsCRIPT».
+ */
+
+const string = 'qWeRTzxCv';
+let letters = string.split('');
+let inverseString = '';
+console.log(letters);
+
+for (const letter of letters) {
+  console.log(letter);
+
+  //   if (letter === letter.toLowerCase()) {
+  //     inverseString += letter.toUpperCase();
+  //   } else {
+  //     inverseString += letter.toLowerCase();
+  //    };
+
+  inverseString =
+      ? (inverseString += letter.toUpperCase())
+      : (inverseString += letter.toLowerCase());
+}
+
+console.log(inverseString);
