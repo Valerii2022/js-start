@@ -165,3 +165,53 @@
 // }
 
 // console.log(totalSalary([14, 25, 7, 89, 69, 36, 12]));
+
+/*
+ * Напиши скрипт который заменяет регистр каждого символа в строке на противоположный.
+ * Например, если строка «JavaScript», то на выходе должена быть строка «jAVAsCRIPT».
+ */
+
+
+// const inversedString = function (string) {
+//     let inverseString = '';
+//     let letters = string.split('');
+
+//     for (const letter of letters) {
+//         inverseString += letter === letter.toLowerCase() ? letter.toUpperCase() : letter.toLowerCase();
+//     }
+//     return inverseString;
+// }
+
+/*
+ * Делаем slug в URL из названия статьи (например на dev.to)
+ * Заголовок статьи состоит только из букв и пробелов
+ *
+ * - Нормализируем строку
+ * - Разбиваем по словам
+ * - Сшиваем в строку с разделителями
+ */
+
+// console.log(inversedString('qWeRTyuIO'));
+
+// const makeSlug = function (string) {
+//     return string.toLowerCase().split(' ').join('-');
+// }
+
+// console.log(makeSlug('Алюмінієва одностороння стремянка для дому.'));
+
+/*
+ * Напиши скрипт который считает сумму элементов двух массивов.
+ */
+
+// const arraysSum = function (array1, array2) {
+//     const array = array1.concat(array2);
+//     let sum = 0;
+//     for (const value of array) {
+//         sum += value;
+//     }
+
+//     return sum;
+// }
+
+// console.log(arraysSum([4, 8, 77, 5, 12], [42, 18, 7, 11, 32, 15]));
+
