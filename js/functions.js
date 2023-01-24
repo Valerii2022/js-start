@@ -215,3 +215,4 @@
 
 // console.log(arraysSum([4, 8, 77, 5, 12], [42, 18, 7, 11, 32, 15]));
 
+// console.log(arraysSum);

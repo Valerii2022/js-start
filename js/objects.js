@@ -197,7 +197,7 @@
       
 //           if (Object.values(this.potions[i]).includes(newPotion.name)) {
 //               return `Error! Potion ${newPotion} is already in your inventory!`;
-//           } 
+//           }
               
 //       };
       
@@ -260,3 +260,4 @@
 
 // console.log(atTheOldToad.updatePotionName('Dragon breath', 'Polymorth'));
 // console.log(atTheOldToad.potions);
+
