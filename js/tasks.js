@@ -330,7 +330,6 @@
 // const index = Number((weight / height**2).toFixed(1));
 // console.log(index);
 
-
 /*                             #12
   Використовуючи конструкцію if...else та prompt, напиши код, який 
   запитуватиме: 'Який стандарт мови JavaScript?'. Якщо користувач вводить
@@ -395,7 +394,6 @@
 //         alert('Післязавтра');
 //         break;
 
-
 //     default:
 //         alert('Можна відпочити :)');
 //         break;
@@ -411,7 +409,6 @@
 // }
 // console.log(sum);
 
-
 /*                       #17
   Напиши цикл for який виводить у консоль браузера числа за зростанням від
   min дo max, але якщо число кратне 5
@@ -425,7 +422,6 @@
 //         console.log(i);
 //     }
 // }
-
 
 /*                      #18   
   Напишіть скрипт який порахує скільки на проміжку від from до to було чисел,
@@ -446,7 +442,6 @@
 // console.log(`Total - ${total}`);
 // console.log
 
-
 /*                    #19 
   Напишіть скрипт для світлофора, де користувач може ввести назву кольору
   у prompt і в залежності від того який був введений колір відображатимуться
@@ -464,11 +459,11 @@
 //   case 'red':
 //     alert('STOP!!!!');
 //     break;
-  
+
 //   case 'green':
 //     alert('GO!')
 //     break;
-  
+
 //   case 'yellow':
 //     alert('Wait a little!');
 //     break;
@@ -485,7 +480,6 @@
   Скористайся циклом while
 */
 
-
 // let number = Number(prompt("Write your number bigger than 100"));
 
 // while (number < 100) {
@@ -493,3 +487,53 @@
 // }
 // console.log(number);
 
+/*                   №21
+ * Работем с коллекцией товаров в корзине:
+ * - getItems()
+ * - add(product)
+ * - remove(productName)
+ * - clear()
+ * - countTotalPrice()
+ * - increaseQuantity(productName)
+ * - decreaseQuantity(productName)
+ *
+ * { name: '🍎', price: 50 }
+ * { name: '🍇', price: 70 }
+ * { name: '🍋', price: 60 }
+ * { name: '🍓', price: 110 }
+ */
+
+// const cart = {
+//   items: [],
+//   getItems() {},
+//   add(product) {},
+//   remove(productName) {},
+//   clear() {},
+//   countTotalPrice() {},
+//   increaseQuantity(productName) {},
+//   decreaseQuantity(productName) {},
+// };
+
+// // console.table(cart.getItems());
+
+// cart.add({ name: '🍎', price: 50 });
+// cart.add({ name: '🍋', price: 60 });
+// cart.add({ name: '🍋', price: 60 });
+// cart.add({ name: '🍓', price: 110 });
+
+// // console.table(cart.getItems());
+
+// cart.remove('🍎');
+// // console.table(cart.getItems());
+
+// // cart.clear();
+// // console.table(cart.getItems());
+
+// // cart.increaseQuantity('🍎');
+// // console.table(cart.getItems());
+
+// // cart.decreaseQuantity('🍋');
+// // cart.decreaseQuantity('🍋');
+// // console.table(cart.getItems());
+
+// // console.log('Total: ', cart.countTotalPrice());
