@@ -319,58 +319,58 @@
   з балансом та історією транзакцій
 */
 
-// Типів транзакцій лише два:
-// Можна покзасти чи зняти гроші з рахунку
-const Transaction = {
-  DEPOSIT: 'deposit',
-  WITHDRAW: 'withdraw',
-};
+// // Типів транзакцій лише два:
+// // Можна покзасти чи зняти гроші з рахунку
+// const Transaction = {
+//   DEPOSIT: 'deposit',
+//   WITHDRAW: 'withdraw',
+// };
 
-const account = {
-  // Поточний баланс рахунку
-  balance: 0,
+// const account = {
+//   // Поточний баланс рахунку
+//   balance: 0,
 
-  // Исторія транзакцій
-  transactions: [],
+//   // Исторія транзакцій
+//   transactions: [],
 
-  /*
-    Метод createTransaction створює та повертає об'єкт транзакції.
-    Приймає суму та тип транзакції.
-  */
+//   /*
+//     Метод createTransaction створює та повертає об'єкт транзакції.
+//     Приймає суму та тип транзакції.
+//   */
 
-  createTransaction(transactionType, transactionSum) {
-    const usertransactionObject = {
-      [transactionType]: transactionSum,
-    };
-    console.log(usertransactionObject);
-    account.transactions.push(usertransactionObject);
-    console.log(this.transactions);
-  },
+//   createTransaction(transactionType, transactionSum) {
+//     const usertransactionObject = {
+//       [transactionType]: transactionSum,
+//     };
+//     console.log(usertransactionObject);
+//     account.transactions.push(usertransactionObject);
+//     console.log(this.transactions);
+//   },
 
-  /*
-    Метод deposit, що відповідає за додавання суми до балансу
-    Приймає суму транзакції
-    Викликає createTransaction для створення об'єкта транзакції
-    та додавання його в історію транзакцій
-  */
+//   /*
+//     Метод deposit, що відповідає за додавання суми до балансу
+//     Приймає суму транзакції
+//     Викликає createTransaction для створення об'єкта транзакції
+//     та додавання його в історію транзакцій
+//   */
 
-  deposit(transactionType, transactionSum) {
-    account.balance = Number([transactionSum]) + Number(account.balance);
-    console.log(account.balance);
-    account.createTransaction(transactionType, transactionSum);
-  },
+//   deposit(transactionType, transactionSum) {
+//     account.balance = Number([transactionSum]) + Number(account.balance);
+//     console.log(account.balance);
+//     account.createTransaction(transactionType, transactionSum);
+//   },
 
-  /*
-    Метод withdraw, що відповідає за зняття суми з балансу.
-    Приймає суму транзакції
-    Якщо сума зняття більша за поточний баланс, виводь повідомлення
-    про те, що зняття такої суми не можливо - недостатнє коштів
+//   /*
+//     Метод withdraw, що відповідає за зняття суми з балансу.
+//     Приймає суму транзакції
+//     Якщо сума зняття більша за поточний баланс, виводь повідомлення
+//     про те, що зняття такої суми не можливо - недостатнє коштів
     
-    Викликає createTransaction для створення об'єкта транзакції
-    та додавання його в історію транзакцій.
-  */
-};
+//     Викликає createTransaction для створення об'єкта транзакції
+//     та додавання його в історію транзакцій.
+//   */
+// };
 
-account.deposit('DEPOSIT', 8500);
-account.deposit('DEPOSIT', 7500);
-// account.createTransaction('WITHDRAW', 2400);
+// account.deposit('DEPOSIT', 8500);
+// account.deposit('DEPOSIT', 7500);
+// // account.createTransaction('WITHDRAW', 2400);
