@@ -181,23 +181,34 @@ const cars = [
   - localeCompare
 */
 
-const sortByModel = (cars, order) => {
-    if (order === 'asc') {
-        cars.sort((a, b) => a.)
-    }
-};
+// const sortByModel = (cars, order) => {
+//     if (order === 'asc') {
+//       return cars.sort((a, b) => a.model.localeCompare(b.model));
+//     } else if (order === 'desc'){
+// return cars.sort((a, b) => b.model.localeCompare(a.model));
+//     }
+// };
+
+// const sortByModel = (cars, order) => {
+//     if (order === 'asc') {
+//       return cars.sort((a, b) => a.make.localeCompare(b.make));
+//     } else if (order === 'desc'){
+// return cars.sort((a, b) => b.make.localeCompare(a.make));
+//     }
+// };
 
 // console.table(cars);
-console.table(sortByModel(cars, 'asc'));
-console.table(sortByModel(cars, 'desc'));
+// console.table(sortByModel(cars, 'asc'));
+// console.table(sortByModel(cars, 'desc'));
 
 /*
   10. Метод reduce
   Нехай функція getTotalAmount повертає загальну кількість автомобілів (значення властивостей amount)
 */
 
-// const getTotalAmount = (cars) => {};
+// const getTotalAmount = (cars) => cars.reduce((totalAmount, car) => totalAmount + car.amount, 0);
 
+// console.table(cars);
 // console.log(getTotalAmount(cars));
 
 /*
@@ -206,9 +217,9 @@ console.table(sortByModel(cars, 'desc'));
   Нехай функція getAvailableCarNames повертає масив моделей автомобілів, але тільки тих, що зараз на розпродажі.
 */
 
-// const getAvailableCarNames = (cars) => {};
+// const getAvailableCarNames = (cars) => cars.filter(car => car.onSale).sort((a, b) => a.model.localeCompare(b.model));
 
-// console.log(getAvailableCarNames(cars));
+// console.table(getAvailableCarNames(cars));
 
 /*
   12. Ланцюжки методів
@@ -217,7 +228,21 @@ console.table(sortByModel(cars, 'desc'));
   який ми передаємо у функцію, відсортованих в алфавітному порядку
 */
 
-// const getSortedCarsOnSale = (cars, type) => {};
+// const getSortedCarsOnSale = (cars, type) => cars.filter(car => car.onSale).filter(car => car.type === type);
 
 // console.table(cars);
-// console.log(getSortedCarsOnSale(cars, 'sedan'));
+// console.table(getSortedCarsOnSale(cars, 'sedan'));
+
+const players = [
+  { id: 'player-1', name: 'Mango', timePlayed: 310, points: 54, online: false },
+  { id: 'player-2', name: 'Poly', timePlayed: 470, points: 92, online: true },
+  { id: 'player-3', name: 'Kiwi', timePlayed: 230, points: 48, online: true },
+  { id: 'player-4', name: 'Ajax', timePlayed: 150, points: 71, online: false },
+  { id: 'player-5', name: 'Chelsy', timePlayed: 80, points: 48, online: true },
+];
+
+const names = players.map(player => player.name);
+console.table(names);
+
+const addPoints = players.map(player => {return [...players], player.points * 1.1} );
+console.table(addPoints);
