@@ -14,6 +14,7 @@
 // console.log(`Result ${powNumber}`);
 // const result = enterNumber ** enterPow;
 // console.log(`Result ${result}`);
+// alert(`${result}`)
 
 /*                        #2
 
