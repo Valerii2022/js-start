@@ -1,38 +1,5 @@
-/*Загальна сума покуп*/
 
-// const cart = [54, 28, 105, 70, 92, 17, 120, 12, 25, 90];
-// let sum = 0;
-// #1
-// for (let i = 0; i < cart.length; i += 1) {
-//   sum += cart[i];
-// }
-// console.log(sum);
-// #2
-// for (const value of cart) {
-//   sum += value;
-// }
-// console.log(sum);
 
-/*
- * Напиши скрипт который подсчитывает сумму всех чётных чисел в массиве.
- */
-
-// const numbers = [1, 5, 8, 9, 12, 4, 15, 27, 30, 18, 14];
-// let total = 0;
-
-// for (let i = 0; i < numbers.length; i += 1) {
-//   if (numbers[i] % 2 === 0) {
-//     console.log(numbers[i]);
-//     total += numbers[i];
-//   }
-// }
-
-// for (const number of numbers) {
-//   if (number % 2 === 0) {
-//     console.log(number);
-//     total += number;
-//   }
-// }
 
 // for (const number of numbers) {
 //   if (number % 2 !== 0) {
