@@ -1,16 +1,16 @@
 
 
-function calculateTotalPrice(order, ...orderTwo) {
-const order = [...order, ...orderTwo]
+// function calculateTotalPrice(order, ...orderTwo) {
+// const order = [...order, ...orderTwo]
  
-  let total = 0;
-  // for (let i = 0; i < order.length; i += 1) {
-  //   total += order[i];
-  // }
-  return total;
-}
+//   let total = 0;
+//   // for (let i = 0; i < order.length; i += 1) {
+//   //   total += order[i];
+//   // }
+//   return total;
+// }
 
-console.log(calculateTotalPrice([164, 48, 168, 7], [58, 17, 28, 52, 25], [7, 9, 75, 12]));
+// console.log(calculateTotalPrice([164, 48, 168, 7], [58, 17, 28, 52, 25], [7, 9, 75, 12]));
 
 // function longestWord(string) {
 //   const str = string.split(' ');
@@ -195,3 +195,4 @@ console.log(calculateTotalPrice([164, 48, 168, 7], [58, 17, 28, 52, 25], [7, 9, 
 // console.log(arraysSum([4, 8, 77, 5, 12], [42, 18, 7, 11, 32, 15]));
 
 // console.log(arraysSum);
+
