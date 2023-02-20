@@ -547,3 +547,6 @@
 // // console.table(cart.getItems());
 
 // // console.log('Total: ', cart.countTotalPrice());
+
+
+
