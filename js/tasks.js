@@ -6,7 +6,6 @@
 // console.log(color);
 // document.body.style.backgroundColor = color;
 
-
 /*                          #1
 
  * Напиши скрипт который просит пользователя ввести число и степень,
@@ -490,10 +489,10 @@
   Скористайся циклом while
 */
 
-// let number = Number(prompt("Write your number bigger than 100"));
+// let number = Number(prompt('Write your number bigger than 100'));
 
 // while (number < 100) {
-//   number = Number(prompt("Write your number bigger than 100"));
+//   number = Number(prompt('Write your number bigger than 100'));
 // }
 // console.log(number);
 
@@ -547,6 +546,3 @@
 // // console.table(cart.getItems());
 
 // // console.log('Total: ', cart.countTotalPrice());
-
-
-
