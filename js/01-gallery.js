@@ -1,56 +1,64 @@
-import { galleryItems } from "./gallery-items.js";
+import { galleryItems } from './gallery-items.js';
 // Change code below this line
 
-const galleryRef = document.querySelector(".gallery");
+console.log(HTMLImageElement.prototype);
 
-galleryRef.addEventListener("click", onImagePreviewClick);
+const galleryRef = document.querySelector('.gallery');
+
+galleryRef.addEventListener('click', onImagePreviewClick);
 
 const imageMarkup = galleryItems
-  .map((item) => {
+  .map(item => {
     return `
    <div class="gallery__item">
   <a class="gallery__link" href="large-image.jpg">
     <img
+      loading="lazy"
       class="gallery__image"
       src="${item.preview}"
       data-source="${item.original}"
       alt="${item.description}"
+      width = "375"
+      height = "240"
     />
   </a>
 </div>
    `;
   })
-  .join("");
+  .join('');
 
-galleryRef.insertAdjacentHTML("beforeend", imageMarkup);
+galleryRef.insertAdjacentHTML('beforeend', imageMarkup);
+
+let modalCreate;
 
 function onImagePreviewClick(event) {
   event.preventDefault();
-  window.addEventListener("keyup", onEscapeKeyCloseModal);
 
-  if (event.target.nodeName !== "IMG") {
+  if (event.target.nodeName !== 'IMG') {
     return;
   }
 
-  const modalCreate = basicLightbox.create(
-    `<img src=${event.target.dataset.source} alt = "${event.target.alt}"/>`
+  window.addEventListener('keyup', onEscapeKeyCloseModal);
+
+  modalCreate = basicLightbox.create(
+    `<img src=${event.target.dataset.source} alt = "${event.target.alt}"/>`,
   );
 
   modalCreate.show();
 
-  function onEscapeKeyCloseModal(event) {
-    if (event.code === "Escape") {
-      console.log("hi");
-      modalCreate.close();
-      removeEventListenerFromWindow();
-    }
+  const basicLightboxRef = document.querySelector('.basicLightbox');
+
+  basicLightboxRef.addEventListener('click', removeEventListenerFromWindow);
+}
+
+function onEscapeKeyCloseModal(event) {
+  if (event.code === 'Escape') {
+    console.log('hi');
+    modalCreate.close();
+    removeEventListenerFromWindow();
   }
+}
 
-  function removeEventListenerFromWindow() {
-    window.removeEventListener("keyup", onEscapeKeyCloseModal);
-  }
-
-  const basicLightboxRef = document.querySelector(".basicLightbox");
-
-  basicLightboxRef.addEventListener("click", removeEventListenerFromWindow);
+function removeEventListenerFromWindow() {
+  window.removeEventListener('keyup', onEscapeKeyCloseModal);
 }
