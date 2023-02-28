@@ -5,20 +5,17 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.html"
+    "build": "babel src -d lib"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Valerii2022/js-start.git"
   },
   "keywords": [],
-  "author": "Valerii <vmpometun@gmail.comL>",
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Valerii2022/js-start/issues"
   },
-  "homepage": "https://github.com/Valerii2022/js-start#readme",
-  "dependencies": {
-    "validator": "^13.9.0"
-  }
+  "homepage": "https://github.com/Valerii2022/js-start#readme"
 }
